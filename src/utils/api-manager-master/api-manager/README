@@ -1,0 +1,90 @@
+Sample Usage
+--------------------------------------------------------------------------------------------------------------------------------------------
+import React, { useContext } from "react";
+import APIManager from "../external/api-manager/APIManager";
+import global from "../../config/Global.json";
+import AuthContext from "../../utils/auth/AuthContext";
+import Department from "./Schema/Department.json"
+import schema from "./Schema/APIManagerStarter.json";
+const APIManagerStarter = () => {
+    let { authToken } = useContext(AuthContext);
+  return (
+    <div className="container">
+      <APIManager 
+        globalConfig={global}
+        token={authToken}
+        data={Department}
+      />
+    </div>
+  )
+}
+
+export default APIManagerStarter
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+{
+    "api": "department",
+    "showField": [
+      { "label": "Name", "key": "name" },
+      { "label": "Company", "key": "company_name" },
+      { "label": "Description", "key": "description" }
+     
+    ],
+    "createField": [
+      {
+        "label": "Name",
+        "type": "text",
+        "varient": "standard",
+        "name": "name",
+        "required":true
+      },
+      {
+        "label": "Company",
+        "type": "advance-select",
+        "name": "company",
+        "varient": "standard",
+        "required":true,
+        "search": {
+          "api": "company",
+          "label": "name",
+          "key": "id"
+        }
+      },
+  
+      {
+        "label": "Description",
+        "type": "text",
+        "varient": "standard",
+        "name": "description"
+      }
+    ],
+    "editField": [
+      {
+        "label": "Name",
+        "type": "text",
+        "varient": "standard",
+        "name": "name"
+      },
+      {
+          "label": "Company",
+          "type": "advance-select",
+          "name": "company",
+          "varient": "standard",
+          "search": {
+            "api": "company",
+            "label": "name",
+            "key": "id"
+          }
+        },
+      {
+        "label": "Description",
+        "type": "text",
+        "varient": "standard",
+        "name": "description"
+      }
+    ]
+  }
+  

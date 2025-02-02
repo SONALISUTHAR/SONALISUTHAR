@@ -1,0 +1,135 @@
+{
+  "roleBased": {
+    "isRoleBased":true,
+    "roleQue":["superuser", "backoffice", "sales", "user"]
+  },
+  "menu": {
+    "superuser": [ 
+      
+    {
+      "title": "Visit Humbingo",
+      "url": "www.humbingo.com",
+      "icon": "fa-house"
+    },
+      {
+        "title": "Home",
+        "url": "/",
+        "icon": "fa-house"
+      },
+      {
+        "title": "Admin",
+        "url": "#",
+        "icon": "fa-gear",
+        "child": [
+          {
+            "title": "User",
+            "url": "/ausers",
+            "icon": "fa-user"
+          },
+          {
+            "title": "Task",
+            "url": "/atask",
+            "icon": "fa-plus"
+          },
+          {
+            "title": "Report",
+            "url": "/atask-report",
+            "icon": "fa-receipt"
+          },
+          
+          {
+            "title": "Log",
+            "url": "/alogs",
+            "icon": "fa-file"
+          },
+          {
+            "title": "Role",
+            "url": "/aroles",
+            "icon": "fa-user-secret"
+          }
+        ]
+      }
+    ],
+    "common": [
+      {
+        "title": "Dashboard",
+        "url": "/admin/dashboard",
+        "icon": "fa-tachometer-alt",
+        "child": [
+          {
+            "title": "Database",
+            "url": "/admin/database",
+            "icon": "fa-database"
+          }
+        ]
+      },
+      {
+        "title": "User Management",
+        "url": "/admin/users",
+        "icon": "fa-user",
+        "child": [
+          {
+            "title": "Database",
+            "url": "/admin/database",
+            "icon": "fa-database",
+            "child": [
+              {
+                "title": "Nested Database",
+                "url": "/admin/database/nested",
+                "icon": "fa-database"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "user": [
+      {
+        "title": "Home",
+        "url": "/",
+        "icon": "fa-home"
+      },
+      {
+        "title": "Task",
+        "url": "/eutask",
+        "icon": "fa-cogs"
+      }
+    ]
+  },
+  "topBar": {
+    "icon": "fa-gear",
+    "notification": {
+      "active": false,
+      "icon": "fa-bell"
+    },
+    "search": {
+      "active": false,
+      "icon": "fa-search",
+      "iconStyle": "",
+      "style": {
+        "height": "45px",
+        "border": "2px solid white",
+        "width": "300px",
+        "borderRadius": "10px"
+      }
+    },
+    "menu": [
+      {
+        "title": "Change Password",
+        "url": "/ausers",
+        "icon": "fa-lock"
+      },
+      {
+        "title": "Signout",
+        "url": "logout",
+        "icon": "fa-power-off"
+      }
+    ]
+  },
+  "profile": {
+    "photo": "",
+    "backgroundImg": "",
+    "welcomePrefix": "Hello",
+    "name": ""
+  }
+}

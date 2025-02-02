@@ -1,0 +1,20 @@
+{
+    "api": {
+      "host": "https://dev_api_cheque.humbingo.in",
+      "token": "/auth/token/",
+      "refreshToken": "/auth/token/refresh/",
+      "user": "/api/v1/user/",
+      "role": "/api/v1/role/",
+      "permission": "/api/v1/permission/",
+      "checkUserType": "/api/v1/checkUserType",
+      "company":"/api/v1/company",
+      "test":"/api/v1/test/",
+      "department":"/api/v1/department/"
+
+     
+    },
+     "version": "1.0",
+    "debug": true,
+    "appName":"Humbingo"
+  }
+  

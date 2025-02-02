@@ -1,0 +1,10 @@
+Add ComponentRegister.js to src/config/ folder and remove .back extension
+
+
+Import Route manager in App.js
+
+<BrowserRouter>
+    <AuthProvider>
+    <RouteManager />
+    </AuthProvider>
+</BrowserRouter>

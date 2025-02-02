@@ -1,0 +1,79 @@
+{
+    "api": "company",
+    "showField": [
+      { "label": "Name", "key": "name" },
+      { "label": "Address", "key": "address" },
+      { "label": "Contact Number", "key": "contact_no" },
+      { "label": "Email", "key": "email" },
+      { "label": "Website", "key": "website" }
+    ],
+    "createField": [
+      {
+        "label": "Name",
+        "type": "text",
+        "varient": "standard",
+        "name": "name",
+        "required":true
+      },
+      {
+        "label": "Address",
+        "type": "text",
+        "varient": "standard",
+        "name": "address",
+        "required":true
+      },
+      {
+        "label": "Contact Number",
+        "type": "number",
+        "varient": "standard",
+        "name": "contact_no",
+        "required":true
+      },
+      {
+        "label": "Email",
+        "type": "email",
+        "varient": "standard",
+        "name": "email",
+        "required":true
+      },
+      {
+        "label": "Website",
+        "type": "text",
+        "varient": "standard",
+        "name": "website"
+      }
+    ],
+    "editField": [
+      {
+        "label": "Name",
+        "type": "text",
+        "varient": "standard",
+        "name": "name"
+      },
+      {
+        "label": "Address",
+        "type": "text",
+        "varient": "standard",
+        "name": "address"
+      },
+      {
+        "label": "Contact Number",
+        "type": "number",
+        "varient": "standard",
+        "name": "contact_no"
+      },
+      {
+        "label": "Email",
+        "type": "email",
+        "varient": "standard",
+        "name": "email"
+      },
+      {
+        "label": "Website",
+        "type": "text",
+        "varient": "standard",
+        "name": "website"
+      }
+    ]
+  }
+  

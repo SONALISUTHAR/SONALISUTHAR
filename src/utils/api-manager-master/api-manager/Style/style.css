@@ -1,0 +1,46 @@
+.dynamic-form-element {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.search-table {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+.search-input-table {
+  padding: 8px;
+  border: none; /* Remove border */
+  border-radius: 15px;
+  outline: none;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+
+  font-size: 16px;
+  width: 100%;
+  height: 30px;
+}
+
+.search-input-table:focus {
+  background-color: #f0f0f0; /* Optional: Change background color on focus */
+}
+/* pagination */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.pagination-button {
+  margin: 0 5px;
+}
+
+.pagination-button.active-page {
+  background-color: #6c757d;
+  color: rgb(73, 198, 207);
+
+}

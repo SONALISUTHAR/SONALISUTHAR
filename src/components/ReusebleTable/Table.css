@@ -1,0 +1,116 @@
+/* Table Styles */
+.data-table-container {
+    font-family: 'Arial', sans-serif;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #f9f9fb;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .data-table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: separate;
+  }
+  
+  .data-table th {
+    text-align: left;
+    background-color: #D84040;
+    color: #fff;
+    padding: 10px 15px;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  
+  .data-table th:hover {
+    cursor: pointer;
+    background-color: #f57979;
+  }
+  
+  .data-table td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ebeaf2;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .data-table tr:nth-child(even) {
+    background-color: #f6f6f9;
+  }
+  
+  .data-table tr:hover {
+    background-color: #e6e6fa;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .no-column {
+    text-align: center;
+    font-weight: bold;
+    background-color: #d1d1ef;
+    color: #fff;
+  }
+  
+  /* Pagination */
+  .page-item {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .page-link {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #5856ac;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .page-link:hover,
+  .page-item.active .page-link {
+    background-color: #6c68c4;
+  }
+  
+  /* Search Input */
+  .search-container {
+    position: relative;
+    width: 250px;
+    margin-right: 20px;
+  }
+  
+  .search-container input {
+    width: 100%;
+    height: 40px;
+    padding: 5px 15px;
+    border: 1px solid #dbdbdb;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(187, 187, 187, 0.25);
+  }
+  
+  .search-container-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  /* Dropdown */
+  .selectoptions {
+    width: auto;
+    height: 40px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #d84040;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+    font-weight: 700;
+  }
+  
+  .selectoptions:hover {
+    background-color: #c53030;
+  }
+  
+
+  
+ 

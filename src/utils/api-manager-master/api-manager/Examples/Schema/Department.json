@@ -1,0 +1,74 @@
+{
+    "api": "role",
+    "showField": [
+      { "label": "Name", "key": "name" },
+      { "label": "Company", "key": "company_name" },
+      { "label": "Description", "key": "description" }
+     
+    ],
+    "createField": [
+      {
+        "label": "Name",
+        "type": "text",
+        "varient": "standard",
+        "name": "name",
+        "required":true
+      },
+      {
+        "label": "2nd Permission",
+        "type": "multi-select",
+        "name": "test",
+        "varient": "standard",
+        "search": {
+          "api": "permission",
+          "label": "name",
+          "key": "id"
+        }
+      },
+
+      {
+        "label": "Permissions",
+        "type": "multi-select",
+        "name": "permissions",
+        "varient": "standard",
+        "search": {
+          "api": "permission",
+          "label": "name",
+          "key": "id"
+        }
+      },
+  
+      {
+        "label": "Description",
+        "type": "text",
+        "varient": "standard",
+        "name": "description"
+      }
+    ],
+    "editField": [
+      {
+        "label": "Name",
+        "type": "text",
+        "varient": "standard",
+        "name": "name"
+      },
+      {
+          "label": "Company",
+          "type": "advance-select",
+          "name": "company",
+          "varient": "standard",
+          "search": {
+            "api": "company",
+            "label": "name",
+            "key": "id"
+          }
+        },
+      {
+        "label": "Description",
+        "type": "text",
+        "varient": "standard",
+        "name": "description"
+      }
+    ]
+  }
+  
